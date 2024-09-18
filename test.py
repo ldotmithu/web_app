@@ -4,8 +4,8 @@ import joblib
 from pathlib import Path
 
 # Load the trained model and preprocessor
-model = joblib.load(Path('artifacts/model_train/model.joblib'))
-churn_preprocess = joblib.load(Path('artifacts/model_train/preprocess.joblib'))
+model = joblib.load(Path('model.joblib'))
+churn_preprocess = joblib.load(Path('preprocess.joblib'))
 
 # Create the Streamlit UI with tabs
 st.title("Mental Risk Prediction Using Machine Learning")
